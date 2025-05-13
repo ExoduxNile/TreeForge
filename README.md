@@ -1,6 +1,6 @@
 # TreeForge
 
-This Python program creates directories and files from a tree diagram specified in a text file. It parses the tree structure, including indentation and special characters (│, ├, └, ─), and replicates it in a user-specified output directory. The program is useful for quickly setting up project structures based on tree diagrams.
+This Python program creates directories and files from a tree diagram specified in a text file. It parses the tree structure, including indentation and special characters (<code style="color : darkorange">│</code>, ├, └, ─), and replicates it in a user-specified output directory. The program is useful for quickly setting up project structures based on tree diagrams.
 
 ## Features
 
@@ -14,8 +14,8 @@ This Python program creates directories and files from a tree diagram specified 
 
 1.  **Clone the Repository**:
 ```bash
-git clone https://github.com/your-username/TreeForge.git
-cd treesculpt
+git clone https://github.com/ExoduxNile/TreeForge.git
+cd TreeForge
 ```
 2.  **Ensure Python 3 is Installed**: The program requires Python 3.6 or higher. Check your Python version:
 ```bash
@@ -90,8 +90,18 @@ Run:
 ```bash
 python3 create_tree_structure.py structure.txt ./mydockerproject
 ```
+### Generating tree structure
+1.  You may generate tree structure from your existing project.
+```bash
+sudo apt install tree
+```
+2.  To generate tree from command of a directory like: testproj.
+```bash
+tree ./testproj
+```
+OR use any AI based chat to generate teh project structure for you.
 
-This creates the structure in ./testproj/kokoro-tts-web/ with all directories and files, ignoring comments after #.
+This creates the structure in ./mydockerproject/my-docker-project/ with all directories and files, ignoring comments after #.
 Notes
 
 *  File Names: The program strips comments (text after #) to ensure valid file and directory names. For example, main.py # FastAPI application becomes main.py.
