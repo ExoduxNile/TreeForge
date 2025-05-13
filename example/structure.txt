@@ -1,0 +1,18 @@
+my-docker-project/
+├── app/
+│   ├── __init__.py
+│   ├── main.py          # FastAPI application
+│   ├── static/          # Static files (CSS, JS, images)
+│   │   ├── style.css
+│   │   └── script.js
+│   ├── templates/       # HTML templates
+│   │   └── index.html
+│   ├── tts/             # TTS processing code
+│   │   ├── __init__.py
+│   │   └── processor.py # Wrapper for your CLI functionality
+│   └── models/          # Data models
+│       └── schemas.py
+├── requirements.txt     # Project dependencies
+├── Dockerfile           # For container deployment
+├── README.md            # Project documentation
+└── .env                 # Environment variables
